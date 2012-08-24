@@ -27,22 +27,38 @@
     if (self) {
         self.asteroids = [NSMutableArray new];
         
-        for (int i = 0; i < 20; ++i){
-            Asteroid *nextAsteroid = [Asteroid createAsteroidAtPosition:[AsteroidsGeometryUtility randomPointWithRect:frame] withView: self];
-            [self.asteroids addObject: nextAsteroid];
-        }
-        
-        for (Asteroid *asteroid in self.asteroids) {
-            [asteroid move];
-        }
+        [self generateAsteroids];
+//        for (int i = 0; i < 20; ++i){
+//            Asteroid *nextAsteroid = [Asteroid createAsteroidAtPosition:[AsteroidsGeometryUtility randomPointWithRect:frame] withView: self];
+//            [self.asteroids addObject: nextAsteroid];
+//        }
+//        
+//        for (Asteroid *asteroid in self.asteroids) {
+//            [asteroid move];
+//        }
     }
     
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:10 target:self selector:@selector (generateAsteroids) userInfo:nil repeats:YES];
+    NSLog(@"%@",timer);
     return self;
 }
 
 -(void)destroyAsteroidSubLayer:(CALayer *)asteroidLayer {
     [asteroidLayer removeFromSuperlayer];
     NSLog(@"Destroyed sublayer");
+}
+
+-(void)generateAsteroids {
+
+    
+    if (self.asteroids.count < 30) {
+        NSLog(@"Generate!");
+        for (int i = 0; i < 7 ; ++i) {
+            Asteroid *nextAsteroid = [Asteroid createAsteroidAtPosition:[AsteroidsGeometryUtility randomPointWithRect:self.frame] withView:self];
+            [self.asteroids addObject: nextAsteroid];
+            [nextAsteroid move];
+        }
+    }
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
