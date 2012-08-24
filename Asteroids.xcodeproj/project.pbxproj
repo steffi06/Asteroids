@@ -1,0 +1,291 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A202AECF15E6B89E00887D79 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A202AECE15E6B89E00887D79 /* UIKit.framework */; };
+		A202AED115E6B89E00887D79 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A202AED015E6B89E00887D79 /* Foundation.framework */; };
+		A202AED315E6B89E00887D79 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A202AED215E6B89E00887D79 /* CoreGraphics.framework */; };
+		A202AED915E6B89F00887D79 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A202AED715E6B89F00887D79 /* InfoPlist.strings */; };
+		A202AEDB15E6B89F00887D79 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A202AEDA15E6B89F00887D79 /* main.m */; };
+		A202AEDF15E6B89F00887D79 /* AsteroidsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A202AEDE15E6B89F00887D79 /* AsteroidsAppDelegate.m */; };
+		A202AEE715E6B8ED00887D79 /* Asteroid.m in Sources */ = {isa = PBXBuildFile; fileRef = A202AEE615E6B8ED00887D79 /* Asteroid.m */; };
+		A202AEE915E6B9E100887D79 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A202AEE815E6B9E100887D79 /* QuartzCore.framework */; };
+		A202AEEC15E6BD1D00887D79 /* AsteroidsView.m in Sources */ = {isa = PBXBuildFile; fileRef = A202AEEB15E6BD1D00887D79 /* AsteroidsView.m */; };
+		A202AEEF15E6C21B00887D79 /* AsteroidsGeometryUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = A202AEEE15E6C21B00887D79 /* AsteroidsGeometryUtility.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A202AECA15E6B89E00887D79 /* Asteroids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Asteroids.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A202AECE15E6B89E00887D79 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A202AED015E6B89E00887D79 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A202AED215E6B89E00887D79 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A202AED615E6B89F00887D79 /* Asteroids-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Asteroids-Info.plist"; sourceTree = "<group>"; };
+		A202AED815E6B89F00887D79 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A202AEDA15E6B89F00887D79 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A202AEDC15E6B89F00887D79 /* Asteroids-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Asteroids-Prefix.pch"; sourceTree = "<group>"; };
+		A202AEDD15E6B89F00887D79 /* AsteroidsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AsteroidsAppDelegate.h; sourceTree = "<group>"; };
+		A202AEDE15E6B89F00887D79 /* AsteroidsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AsteroidsAppDelegate.m; sourceTree = "<group>"; };
+		A202AEE515E6B8ED00887D79 /* Asteroid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Asteroid.h; sourceTree = "<group>"; };
+		A202AEE615E6B8ED00887D79 /* Asteroid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Asteroid.m; sourceTree = "<group>"; };
+		A202AEE815E6B9E100887D79 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A202AEEA15E6BD1D00887D79 /* AsteroidsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsteroidsView.h; sourceTree = "<group>"; };
+		A202AEEB15E6BD1D00887D79 /* AsteroidsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsteroidsView.m; sourceTree = "<group>"; };
+		A202AEED15E6C21B00887D79 /* AsteroidsGeometryUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsteroidsGeometryUtility.h; sourceTree = "<group>"; };
+		A202AEEE15E6C21B00887D79 /* AsteroidsGeometryUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsteroidsGeometryUtility.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A202AEC715E6B89E00887D79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A202AEE915E6B9E100887D79 /* QuartzCore.framework in Frameworks */,
+				A202AECF15E6B89E00887D79 /* UIKit.framework in Frameworks */,
+				A202AED115E6B89E00887D79 /* Foundation.framework in Frameworks */,
+				A202AED315E6B89E00887D79 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A202AEBF15E6B89E00887D79 = {
+			isa = PBXGroup;
+			children = (
+				A202AED415E6B89F00887D79 /* Asteroids */,
+				A202AECD15E6B89E00887D79 /* Frameworks */,
+				A202AECB15E6B89E00887D79 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A202AECB15E6B89E00887D79 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A202AECA15E6B89E00887D79 /* Asteroids.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A202AECD15E6B89E00887D79 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A202AEE815E6B9E100887D79 /* QuartzCore.framework */,
+				A202AECE15E6B89E00887D79 /* UIKit.framework */,
+				A202AED015E6B89E00887D79 /* Foundation.framework */,
+				A202AED215E6B89E00887D79 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A202AED415E6B89F00887D79 /* Asteroids */ = {
+			isa = PBXGroup;
+			children = (
+				A202AEDD15E6B89F00887D79 /* AsteroidsAppDelegate.h */,
+				A202AEDE15E6B89F00887D79 /* AsteroidsAppDelegate.m */,
+				A202AEE515E6B8ED00887D79 /* Asteroid.h */,
+				A202AEE615E6B8ED00887D79 /* Asteroid.m */,
+				A202AEEA15E6BD1D00887D79 /* AsteroidsView.h */,
+				A202AEEB15E6BD1D00887D79 /* AsteroidsView.m */,
+				A202AEED15E6C21B00887D79 /* AsteroidsGeometryUtility.h */,
+				A202AEEE15E6C21B00887D79 /* AsteroidsGeometryUtility.m */,
+				A202AED515E6B89F00887D79 /* Supporting Files */,
+			);
+			path = Asteroids;
+			sourceTree = "<group>";
+		};
+		A202AED515E6B89F00887D79 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A202AED615E6B89F00887D79 /* Asteroids-Info.plist */,
+				A202AED715E6B89F00887D79 /* InfoPlist.strings */,
+				A202AEDA15E6B89F00887D79 /* main.m */,
+				A202AEDC15E6B89F00887D79 /* Asteroids-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A202AEC915E6B89E00887D79 /* Asteroids */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A202AEE215E6B89F00887D79 /* Build configuration list for PBXNativeTarget "Asteroids" */;
+			buildPhases = (
+				A202AEC615E6B89E00887D79 /* Sources */,
+				A202AEC715E6B89E00887D79 /* Frameworks */,
+				A202AEC815E6B89E00887D79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Asteroids;
+			productName = Asteroids;
+			productReference = A202AECA15E6B89E00887D79 /* Asteroids.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A202AEC115E6B89E00887D79 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Asteroids;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = BurnOffBabes;
+			};
+			buildConfigurationList = A202AEC415E6B89E00887D79 /* Build configuration list for PBXProject "Asteroids" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A202AEBF15E6B89E00887D79;
+			productRefGroup = A202AECB15E6B89E00887D79 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A202AEC915E6B89E00887D79 /* Asteroids */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A202AEC815E6B89E00887D79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A202AED915E6B89F00887D79 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A202AEC615E6B89E00887D79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A202AEDB15E6B89F00887D79 /* main.m in Sources */,
+				A202AEDF15E6B89F00887D79 /* AsteroidsAppDelegate.m in Sources */,
+				A202AEE715E6B8ED00887D79 /* Asteroid.m in Sources */,
+				A202AEEC15E6BD1D00887D79 /* AsteroidsView.m in Sources */,
+				A202AEEF15E6C21B00887D79 /* AsteroidsGeometryUtility.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A202AED715E6B89F00887D79 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A202AED815E6B89F00887D79 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A202AEE015E6B89F00887D79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A202AEE115E6B89F00887D79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A202AEE315E6B89F00887D79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Asteroids/Asteroids-Prefix.pch";
+				INFOPLIST_FILE = "Asteroids/Asteroids-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A202AEE415E6B89F00887D79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Asteroids/Asteroids-Prefix.pch";
+				INFOPLIST_FILE = "Asteroids/Asteroids-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A202AEC415E6B89E00887D79 /* Build configuration list for PBXProject "Asteroids" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A202AEE015E6B89F00887D79 /* Debug */,
+				A202AEE115E6B89F00887D79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A202AEE215E6B89F00887D79 /* Build configuration list for PBXNativeTarget "Asteroids" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A202AEE315E6B89F00887D79 /* Debug */,
+				A202AEE415E6B89F00887D79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A202AEC115E6B89E00887D79 /* Project object */;
+}
