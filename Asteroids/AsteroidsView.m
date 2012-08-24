@@ -49,10 +49,12 @@
     CGPoint touchedPoint = [[touches anyObject] locationInView:self];
     NSLog(@"Touch recognized");
     Asteroid *asteroidToRemove;
+
     for (Asteroid* asteroid in self.asteroids){
 //        NSLog(@"Inside asteroids loop!");
 //        NSLog(@"%@", asteroid.layer);
-        if (CGRectContainsPoint(asteroid.layer.frame, touchedPoint) ) {
+        CALayer *presLayer = [asteroid.layer presentationLayer];
+        if (CGRectContainsPoint(presLayer.frame, touchedPoint) ) {
             NSLog(@"Contained point found");
 //            [self.asteroids removeObject:asteroid];
             [self destroyAsteroidSubLayer:asteroid.layer];

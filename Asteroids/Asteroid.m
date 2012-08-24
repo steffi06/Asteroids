@@ -20,7 +20,7 @@
     Asteroid *asteroid = [Asteroid new];
     
     asteroid.layer = [CALayer new];
-    asteroid.layer.bounds = CGRectMake( 0 , 0 , 25 , 15 );
+    asteroid.layer.bounds = CGRectMake( 0 , 0 , 50 , 30 );
     asteroid.layer.position = point;
     
     asteroid.layer.delegate = asteroid;
@@ -38,7 +38,7 @@
 
 -(void)move {
     [CATransaction begin];
-    [CATransaction setAnimationDuration: ((double)arc4random()/UINT_MAX + 1)*1.5];
+    [CATransaction setAnimationDuration: ((double)arc4random()/UINT_MAX + 1)*200];
     [CATransaction setCompletionBlock:^{
         [self move];
     }];
@@ -52,10 +52,14 @@
     
     float radius = hypotf(self.layer.position.x - randomPoint.x, self.layer.position.y - randomPoint.y);
     
-    double randAngle = (double)arc4random()/UINT_MAX;
     
     CGMutablePathRef newPath = CGPathCreateMutable();
-    CGPathAddArc(newPath, NULL, self.layer.position.x - radius * cos(randAngle), self.layer.position.y - radius * sin(randAngle), radius, randAngle, randAngle * M_PI , YES);
+    CGPathAddArc(newPath, NULL, self.layer.position.x, self.layer.position.y, radius, 180, M_PI , YES);
+    
+//    CGPathMoveToPoint(newPath, NULL, self.layer.position.x, self.layer.position.y);
+//    CGPathAddQuadCurveToPoint(newPath, NULL, (self.layer.position.x +randomPoint.x)/2, (self.layer.position.y + randomPoint.y)/2, randomPoint.x, randomPoint.y);
+
+//    CGPathAddLineToPoint(newPath, NULL, randomPoint.x, randomPoint.y);
     animKeyFrame.path = newPath;
 
 
